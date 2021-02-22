@@ -27,7 +27,16 @@ nav .website_title, nav ul li {
   padding: 6px 12px;
 }
 
+#check {
+  display: none;
+}
+
+#check:checked~ul li {
+  display: block;
+}
+
 .icon {
+  z-index: 200;
   height: 40px;
   width: 35px;
   margin-right: 10px;
@@ -100,11 +109,12 @@ nav .website_title, nav ul li {
   nav ul {
     position: absolute;
     right: 0;
-    background-color: whitesmoke;
-    opacity: 0;
+    top: 40px;
   }
   nav ul li {
-    display: block;
+    display: none;
+    background-color: #fafafa;
+    box-shadow: 1px 1px 1px #795710;
   }
   .icon {
     display: block;
